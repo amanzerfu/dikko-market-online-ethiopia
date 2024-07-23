@@ -8,7 +8,7 @@ const About = () => {
       <div className="container">
         <h2>About Me</h2>
         <p>
-          I am a skilled frontend developer with experience in ReactJS and a keen eye for design. I love building user-friendly and responsive web applications.
+          I am a skilled frontend developer with experience in Java spring boot vs ReactJS and a keen eye for design. I love building user-friendly and responsive web applications.
         </p>
       </div>
     </AboutSection>
