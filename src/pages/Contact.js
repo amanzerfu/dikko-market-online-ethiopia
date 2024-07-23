@@ -8,10 +8,9 @@ const Contact = () => {
       <div className="container">
         <h2>Contact</h2>
         <ContactForm action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-          <Input type="text" name="name" placeholder="Your Name" required />
-          <Input type="email" name="_replyto" placeholder="Your Email" required />
-          <Textarea name="message" placeholder="Your Message" required></Textarea>
-          <Button type="submit">Send</Button>
+          <Input>
+          +251940223403 acceptedamanuel@gmail.com Addis Ababa Ethiopia
+          </Input>
         </ContactForm>
       </div>
     </ContactSection>
@@ -34,7 +33,7 @@ const ContactForm = styled.form`
   align-items: center;
 `;
 
-const Input = styled.input`
+const Input = styled.label`
   margin-bottom: 20px;
   padding: 10px;
   width: 100%;

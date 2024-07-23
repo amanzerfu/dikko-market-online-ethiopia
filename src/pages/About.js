@@ -8,7 +8,8 @@ const About = () => {
       <div className="container">
         <h2>About Me</h2>
         <p>
-          I am a skilled frontend developer with experience in Java spring boot vs ReactJS and a keen eye for design. I love building user-friendly and responsive web applications.
+    
+        Seasoned backend developer with over 5 years of hands-on experience driving transformative projects within the different industry. Expertise spans from architecting robust RESTful web services to optimizing database performance and deploying applications on cutting-edge technologies.
         </p>
       </div>
     </AboutSection>
@@ -18,6 +19,8 @@ const About = () => {
 const AboutSection = styled.section`
   background: ${({ theme }) => theme.colors.background};
   text-align: center;
+  align-content:center;
+  height:70%;
 
   h2 {
     font-size: 36px;

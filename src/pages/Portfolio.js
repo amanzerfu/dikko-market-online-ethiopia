@@ -4,14 +4,14 @@ import styled from 'styled-components';
 
 const projects = [
   {
-    title: 'Project 1',
-    description: 'Brief description of the project.',
-    link: 'https://github.com/username/project1',
+    title: 'linkedin',
+    description: 'visit linked in.',
+    link: 'https://www.linkedin.com/in/amanuel-zerfu/',
   },
   {
-    title: 'Project 2',
-    description: 'Brief description of the project.',
-    link: 'https://github.com/username/project2',
+    title: 'github',
+    description: 'visit github.',
+    link: 'https://github.com/amanzerfu',
   },
   // Add more projects as needed
 ];
@@ -26,7 +26,7 @@ const Portfolio = () => {
             <ProjectItem key={index}>
               <h3>{project.title}</h3>
               <p>{project.description}</p>
-              <a href={project.link} target="_blank" rel="noopener noreferrer">View on GitHub</a>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">{project.title}</a>
             </ProjectItem>
           ))}
         </ProjectList>
