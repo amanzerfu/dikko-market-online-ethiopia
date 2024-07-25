@@ -8,8 +8,7 @@ const About = () => {
       <div className="container">
         <h2>About Me</h2>
         <p>
-    
-        Seasoned backend developer with over 5 years of hands-on experience driving transformative projects within the different industry. Expertise spans from architecting robust RESTful web services to optimizing database performance and deploying applications on cutting-edge technologies.
+          I am a skilled frontend developer with experience in ReactJS and a keen eye for design. I love building user-friendly and responsive web applications.
         </p>
       </div>
     </AboutSection>
@@ -19,8 +18,6 @@ const About = () => {
 const AboutSection = styled.section`
   background: ${({ theme }) => theme.colors.background};
   text-align: center;
-  align-content:center;
-  height:70%;
 
   h2 {
     font-size: 36px;

@@ -4,14 +4,16 @@ import styled from 'styled-components';
 
 const projects = [
   {
-    title: 'linkedin',
-    description: 'visit linked in.',
-    link: 'https://www.linkedin.com/in/amanuel-zerfu/',
+    title: 'M-PESA BUESINESS PORTAL',
+    name:'m-pesa merchants and agents onboarding portal',
+    description: 'M-PESA application portal enables business and individuals to apply for M-PESA solutions to collect and disburse funds. ',
+    link: 'https://m-pesabusiness.safaricom.et/',
   },
   {
-    title: 'github',
-    description: 'visit github.',
-    link: 'https://github.com/amanzerfu',
+    title: 'UNICASH SCHOOL',
+    name:'unicash school payment and reporting',
+    description: 'offer an easy way to collect tuition fees for school and colleges/universities and,; Provide parents and students a wide range of payment options.',
+    link: 'https://school.unicash.com.et/school/',
   },
   // Add more projects as needed
 ];
@@ -26,7 +28,7 @@ const Portfolio = () => {
             <ProjectItem key={index}>
               <h3>{project.title}</h3>
               <p>{project.description}</p>
-              <a href={project.link} target="_blank" rel="noopener noreferrer">{project.title}</a>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">Link</a>
             </ProjectItem>
           ))}
         </ProjectList>
@@ -52,7 +54,7 @@ const ProjectList = styled.div`
 `;
 
 const ProjectItem = styled.div`
-  background: #fff;
+  background: ${({ theme }) => theme.colors.background};
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 20px;

@@ -1,48 +1,17 @@
-// src/components/Navbar.js
 import React from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import './Navbar.css';
 
 const Navbar = () => {
   return (
-    <Nav>
-      <Logo to="/">Amanuel Zerfu</Logo>
-      <Menu>
-        <MenuItem to="/">Home</MenuItem>
-        <MenuItem to="/about">About</MenuItem>
-        <MenuItem to="/portfolio">Portfolio</MenuItem>
-        <MenuItem to="/contact">Contact</MenuItem>
-      </Menu>
-    </Nav>
+    <nav className="navbar">
+      <ul className="navbar-list">
+        <li className="navbar-item"><a href="/">Home</a></li>
+        {/* <li className="navbar-item"><a href="/about">About</a></li> */}
+        <li className="navbar-item"><a href="/portfolio">Portfolio</a></li>
+        <li className="navbar-item"><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
   );
 };
-
-const Nav = styled.nav`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #333;
-`;
-
-const Logo = styled(Link)`
-  color: #fff;
-  font-size: 1.5rem;
-  text-decoration: none;
-`;
-
-const Menu = styled.div`
-  display: flex;
-`;
-
-const MenuItem = styled(Link)`
-  margin-left: 2rem;
-  color: #fff;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-`;
 
 export default Navbar;
